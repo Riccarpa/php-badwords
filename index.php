@@ -31,7 +31,7 @@ tre asterischi (***) tutte le occorrenze della parola da censurare. -->
     </div>
 
     <div class="bad-word">
-        <h4>La parola da censurare nella stringa "Hello world" è:</h4>
+        <h4>Scegli la parola da censurare nella stringa "Hello world":</h4>
         <form method="GET" style="margin-bottom:20px">
             <input type="text" name='badWord' value='world'>
             <span>premi invio per censurare</span>
@@ -42,9 +42,9 @@ tre asterischi (***) tutte le occorrenze della parola da censurare. -->
         $bad_word = $_GET['badWord'];
 
         if($bad_word){
-            $hello_world = "Hello $bad_word";
-            echo str_replace($bad_word, '***', $hello_world) ;
-        };
+            $hello_world = "Hello world";
+            echo str_replace($bad_word, '***', $hello_world);
+        }
         ?>
 
     </div>
